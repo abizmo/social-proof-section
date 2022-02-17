@@ -1,0 +1,48 @@
+.ratings {
+  flex: 1;
+
+  & li {
+    align-items: center;
+    background-color: var(--clr-neutral-light);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    width: 100%;
+
+    @media (min-width: 70rem) {
+      flex-direction: row;
+      gap: 2em;
+      justify-content: flex-start;
+      max-width: 30em;
+      padding: 1em 2em;
+      
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  p {
+    color: var(--clr-primary-dark);
+    font-size: var(--fs-small);
+    font-weight: var(--fw-bold);
+  }
+}
+
+.spacing>*+* {
+  margin-top: 1rem;
+}
+
+.stars {
+  display: flex;
+  gap: 0.5rem;
+}

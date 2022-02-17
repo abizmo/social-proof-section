@@ -1,0 +1,213 @@
+:root {
+  --clr-primary-dark: hsl(300, 43%, 22%);
+  --clr-primary-light: hsl(333, 80%, 67%);
+  --clr-neutral-dark: hsl(303, 10%, 53%);
+  --clr-neutral-light: hsl(300, 24%, 96%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --ff-normal: "Spartan", sans-serif;
+  --fs-small: 0.8125rem;
+  --fs-normal: 0.9375rem;
+  --fs-big: 2rem;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+@media (min-width: 70rem) {
+  :root {
+    --fs-big: 3rem;
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: var(--ff-normal);
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-regular);
+}
+
+h1 {
+  font-size: var(--fs-big);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.03em;
+  line-height: 1em;
+  margin-bottom: 0.75em;
+}
+@media (min-width: 70rem) {
+  h1 {
+    letter-spacing: -0.04em;
+    margin-bottom: 0.33em;
+  }
+}
+
+.lead {
+  letter-spacing: -0.03em;
+  line-height: 1.666em;
+}
+
+.header {
+  margin-bottom: 3.333em;
+}
+@media (min-width: 70rem) {
+  .header {
+    margin-bottom: 4.666em;
+  }
+}
+
+.intro {
+  color: var(--clr-primary-dark);
+  text-align: center;
+}
+@media (min-width: 70rem) {
+  .intro {
+    max-width: 28rem;
+    text-align: left;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 20rem;
+}
+@media (min-width: 70rem) {
+  .container {
+    max-width: 70rem;
+  }
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+@media (min-width: 70rem) {
+  .split {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.ratings {
+  flex: 1;
+}
+.ratings li {
+  align-items: center;
+  background-color: var(--clr-neutral-light);
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  width: 100%;
+}
+@media (min-width: 70rem) {
+  .ratings li {
+    flex-direction: row;
+    gap: 2em;
+    justify-content: flex-start;
+    max-width: 30em;
+    padding: 1em 2em;
+  }
+  .ratings li:first-child {
+    margin-left: 0;
+  }
+  .ratings li:last-child {
+    margin-right: 0;
+  }
+}
+.ratings p {
+  color: var(--clr-primary-dark);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-bold);
+}
+
+.spacing > * + * {
+  margin-top: 1rem;
+}
+
+.stars {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/*# sourceMappingURL=index.css.map */

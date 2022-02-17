@@ -1,0 +1,41 @@
+body {
+  font-family: var(--ff-normal);
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-regular);
+}
+
+h1 {
+  font-size: var(--fs-big);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.03em;
+  line-height: 1em;
+  margin-bottom: 0.75em;
+
+  @media(min-width: 70rem) {
+    letter-spacing: -0.04em;
+    margin-bottom: 0.33em;
+  }
+}
+
+.lead {
+  letter-spacing: -0.03em;
+  line-height: 1.666em;
+}
+
+.header {
+  margin-bottom: 3.333em;
+
+  @media(min-width: 70rem) {
+    margin-bottom: 4.666em;
+  }
+}
+
+.intro {
+  color: var(--clr-primary-dark);
+  text-align: center;
+
+  @media(min-width: 70rem) {
+    max-width: 28rem;
+    text-align: left;
+  }
+}
