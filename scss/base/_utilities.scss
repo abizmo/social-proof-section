@@ -8,6 +8,10 @@
   }
 }
 
+.spacing>*+* {
+  margin-top: 1rem;
+}
+
 .split {
   display: flex;
   flex-direction: column;

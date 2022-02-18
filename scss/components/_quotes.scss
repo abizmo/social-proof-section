@@ -1,0 +1,50 @@
+.quotes {
+  font-size: var(--fs-small);
+
+  & li {
+    background-color: var(--clr-primary-dark);
+    border-radius: 0.462em;
+    padding: 2.769em 2.1em;
+  }
+
+  & blockquote {
+    color: var(--clr-neutral-light);
+    letter-spacing: -0.01em;
+    line-height: 1.692em;
+    margin-top: 1.6em;
+  }
+
+  @media (min-width: 70rem) {
+    display: flex;
+    gap: 2.308em;
+
+    &>*+* {
+      margin-top: 0;
+    }
+  }
+}
+
+.meta {
+  align-items: center;
+  display: flex;
+  font-size: var(--fs-small);
+  line-height: 1.154em;
+  gap: 1.692em;
+
+  & img {
+    border-radius: 50%;
+    height: 3.231em;
+  }
+
+  & .author {
+    color: var(--clr-neutral-white);
+    font-weight: var(--fw-bold);
+    margin-bottom: 0.333em;
+  }
+
+  & .role {
+    color: var(--clr-primary-light);
+    font-weight: var(--fw-medium);
+  }
+
+}
