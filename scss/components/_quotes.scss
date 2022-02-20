@@ -21,6 +21,14 @@
     &>*+* {
       margin-top: 0;
     }
+
+    & li:first-child {
+      transform: translateY(-2em);
+    }
+
+    & li:last-child {
+      transform: translateY(2em);
+    }
   }
 }
 

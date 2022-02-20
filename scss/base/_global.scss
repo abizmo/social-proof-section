@@ -1,7 +1,23 @@
 body {
+  align-content: center;
+  display: grid;
   font-family: var(--ff-normal);
   font-size: var(--fs-normal);
   font-weight: var(--fw-regular);
+  padding-top: 5.333em;
+  position: relative;
+
+  @media(min-width: 70rem) {
+    padding-top: 0;
+  }
+}
+
+main {
+  margin-bottom: 5em;
+
+  @media(min-width: 70rem) {
+    margin-bottom: 0;
+  }
 }
 
 h1 {
@@ -26,7 +42,7 @@ h1 {
   margin-bottom: 3.333em;
 
   @media(min-width: 70rem) {
-    margin-bottom: 4.666em;
+    margin-bottom: calc(4.666em + 2 * var(--fs-small));
   }
 }
 
