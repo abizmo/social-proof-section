@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/abizmo/social-proof-section](https://github.com/abizmo/social-proof-section)
-- Live Site URL: []()
+- Live Site URL: [https://abizmo.github.io/social-proof-section/](https://abizmo.github.io/social-proof-section/)
 
 ## My process
 
